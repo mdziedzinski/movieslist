@@ -1,6 +1,6 @@
 # MoviesList
 
-![Design preview of the app](./preview.png) 
+![Design preview of the app](./src/preview.png) 
 
 
 
