@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { GlobalContext } from "../context/GlobalState";
 import { Card, Button, Placeholder, Container } from "react-bootstrap";
 
 const ResultCard = ({ movie }) => {
+  const { addMovieToWatchlist, watchlist } = useContext(GlobalContext);
+  let storedMovie = watchlist.find((stored) => stored.id === movie.id);
+  const watchlistDisabled = storedMovie ? true : false;
   return (
     <>
       {movie.poster_path ? (
@@ -11,7 +15,13 @@ const ResultCard = ({ movie }) => {
             src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}
           />
           <Card.Body>
-            <Button variant="primary">Add to watchlist</Button>
+            <Button
+              disabled={watchlistDisabled}
+              onClick={() => addMovieToWatchlist(movie)}
+              variant="primary"
+            >
+              Add to watchlist
+            </Button>
             <Card.Title>{movie.title}</Card.Title>
             <Card.Subtitle className="mb-2 text-muted">
               {movie.release_date.substring(0, 4)}
