@@ -25,6 +25,4 @@ You can search, add, delete and modify movies. Movies are fetched from https://w
 ## Live app :tada:
 
 
-:construction: App in progress, preview and live app will be here soon :construction:
-
-- [App live on Netlify]()
+- [App live on Netlify](https://mellifluous-tapioca-130f73.netlify.app/)
