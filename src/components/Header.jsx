@@ -11,7 +11,7 @@ const Header = () => {
       <Container fluid>
         <Navbar.Brand>
           <Link className="text-decoration-none text-white" to="/">
-            WatchList App
+            Movie List
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

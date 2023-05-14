@@ -31,7 +31,7 @@ const EditMovieModal = ({ show, handleClose, movie, editMovie }) => {
               onChange={handleChange}
             />
           </Form.Group>
-          {/* Add other form fields as needed */}
+
           <Button variant="primary" type="submit">
             Save Changes
           </Button>

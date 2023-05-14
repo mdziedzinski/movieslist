@@ -12,16 +12,9 @@ const MovieControls = ({ movie, type }) => {
     editMovie,
   } = useContext(GlobalContext);
 
-  const [editMode, setEditMode] = useState(false);
-  const [updatedTitle, setUpdatedTitle] = useState(movie.title);
   const [showEditModal, setShowEditModal] = useState(false);
   const handleShowEditModal = () => setShowEditModal(true);
   const handleCloseEditModal = () => setShowEditModal(false);
-
-  const handleEdit = (updatedMovie) => {
-    editMovie(updatedMovie);
-    setEditMode(false);
-  };
 
   return (
     <div>

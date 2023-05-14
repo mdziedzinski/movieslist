@@ -26,6 +26,11 @@ function Watchlist() {
                 add new movie{" "}
               </Link>
             </Button>
+            <Button variant="primary" className="m-3 btn-lg">
+              <Link className="text-decoration-none text-white" to="/watched">
+                check your watched list{" "}
+              </Link>
+            </Button>
           </Alert>
         )}
       </Container>
